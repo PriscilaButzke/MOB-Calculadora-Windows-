@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -13,12 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginEnd="0dp"
-        android:background="@color/black"
+        android:background="@color/gelo"
         android:ellipsize="start"
         android:gravity="end"
         android:singleLine="true"
         android:text=""
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40sp" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -26,12 +26,12 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginEnd="0dp"
-        android:background="@color/black"
+        android:background="@color/gelo"
         android:ellipsize="end"
         android:gravity="end"
         android:maxLines="1"
         android:text=""
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="30sp" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bt_limpar"
             style="@style/Operators_Button"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:text="C" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -53,12 +53,13 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/raiz"
             style="@style/Operators_Button"
-            android:text="raiz" />
+            android:text="²√" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/divisao"
             style="@style/Operators_Button"
-            android:text="/" />
+            android:text="÷"
+            android:textSize="40sp"/>
 
     </LinearLayout>
 
@@ -109,7 +110,8 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/subtracao"
             style="@style/Operators_Button"
-            android:text="-" />
+            android:text="-"
+            android:textSize="40sp"/>
 
     </LinearLayout>
 

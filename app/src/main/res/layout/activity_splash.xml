@@ -6,24 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".splashActivity"
     android:orientation="vertical"
-    android:background="#000">
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/calculator"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Developed by"
-        android:textColor="#fff"
-        android:textSize="18sp"
-        android:gravity="bottom|center"
-        android:layout_weight="1"/>
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="200dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Priscila Butzke"
-        android:textColor="#fff"
-        android:textSize="40sp"
-        android:gravity="top|center"
-        android:layout_weight="1"/>
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+
 
 </LinearLayout>

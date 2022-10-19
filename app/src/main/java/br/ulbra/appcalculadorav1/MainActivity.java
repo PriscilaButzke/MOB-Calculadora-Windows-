@@ -11,6 +11,8 @@ import android.widget.TextView;
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button numeroZero, numeroUm, numeroDois, numeroTres,
@@ -49,12 +51,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         raiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DecimalFormat f = new DecimalFormat("0.00");
                 TextView expressao = findViewById(R.id.txt_expressao);
-                int numero = Integer.parseInt(expressao.getText().toString());
-                int raizQuadrada = (int) Math.sqrt(numero);
+                double numero = Double.parseDouble(expressao.getText().toString());
+                double raizQuadrada =  Math.sqrt(numero);
 
-
-                txtResultado.setText(raizQuadrada);
+                txtResultado.setText("" + f.format(raizQuadrada));
+                txtExpressao.setText(f.format(raizQuadrada));
             }
         });
 

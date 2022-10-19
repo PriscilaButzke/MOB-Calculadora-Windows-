@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/s.lucas/AndroidStudioProjects/AppCalculadorav1/app/src/main/res/drawable/botao_numero_clicado.xml" value="0.1565" />
+        <entry key="..\:/Users/s.lucas/AndroidStudioProjects/AppCalculadorav1/app/src/main/res/drawable/botao_operacao_clicado.xml" value="0.1645" />
+        <entry key="..\:/Users/s.lucas/AndroidStudioProjects/AppCalculadorav1/app/src/main/res/drawable/botao_operador_clicado.xml" value="0.1645" />
         <entry key="..\:/Users/s.lucas/AndroidStudioProjects/AppCalculadorav1/app/src/main/res/drawable/shape_numero_normal.xml" value="0.157" />
         <entry key="..\:/Users/s.lucas/AndroidStudioProjects/AppCalculadorav1/app/src/main/res/drawable/shape_numero_selecionado.xml" value="0.157" />
-        <entry key="..\:/Users/s.lucas/AndroidStudioProjects/AppCalculadorav1/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/s.lucas/AndroidStudioProjects/AppCalculadorav1/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/s.lucas/AndroidStudioProjects/AppCalculadorav1/app/src/main/res/layout/activity_splash.xml" value="0.19947916666666668" />
       </map>
     </option>
