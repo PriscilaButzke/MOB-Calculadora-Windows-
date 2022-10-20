@@ -51,14 +51,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         raiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (txtResultado.getText().equals("")) {
+                    txtResultado.setText("Erro, campo vazio!");
+                }else{
+                    DecimalFormat f = new DecimalFormat("0.00");
+                    TextView resultado = findViewById(R.id.txt_resultado);
+                    double numero = Double.parseDouble(resultado.getText().toString());
+                    double raizQuadrada = Math.sqrt(numero);
 
-                DecimalFormat f = new DecimalFormat("0.00");
-                TextView resultado = findViewById(R.id.txt_resultado);
-                double numero = Double.parseDouble(resultado.getText().toString());
-                double raizQuadrada = Math.sqrt(numero);
-
-                txtResultado.setText("" + f.format(raizQuadrada));
-                txtExpressao.setText(f.format(raizQuadrada));
+                    txtResultado.setText("" + f.format(raizQuadrada));
+                    txtExpressao.setText(f.format(raizQuadrada));
+                }
             }
         });
 
