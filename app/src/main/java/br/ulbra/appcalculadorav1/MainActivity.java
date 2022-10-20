@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button numeroZero, numeroUm, numeroDois, numeroTres,
             numeroQuatro, numeroCinco, numeroSeis, numeroSete,
             numeroOito, numeroNove, ponto, divisao, multiplicacao,
-            soma, subtracao, igual, botao_limpar,mod,raiz;
+            soma, subtracao, igual, botao_limpar, mod, raiz;
     private TextView txtExpressao, txtResultado;
     private ImageView backspace;
 
@@ -51,10 +51,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         raiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 DecimalFormat f = new DecimalFormat("0.00");
-                TextView expressao = findViewById(R.id.txt_expressao);
-                double numero = Double.parseDouble(expressao.getText().toString());
-                double raizQuadrada =  Math.sqrt(numero);
+                TextView resultado = findViewById(R.id.txt_resultado);
+                double numero = Double.parseDouble(resultado.getText().toString());
+                double raizQuadrada = Math.sqrt(numero);
 
                 txtResultado.setText("" + f.format(raizQuadrada));
                 txtExpressao.setText(f.format(raizQuadrada));
@@ -93,18 +94,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Expression expressao = new ExpressionBuilder(txtExpressao.getText().toString()).build();
                     double resultado = expressao.evaluate();
                     long longResult = (long) resultado;
-                    if(resultado == (double) longResult){
-                        txtResultado.setText((CharSequence) String.valueOf(longResult) );
-                    }else{
-                        txtResultado.setText((CharSequence)String.valueOf(resultado));
+                    if (resultado == (double) longResult) {
+                        txtResultado.setText((CharSequence) String.valueOf(longResult));
+                    } else {
+                        txtResultado.setText((CharSequence) String.valueOf(resultado));
                     }
-                }catch (Exception e){
+                } catch (Exception e) {
 
                 }
 
             }
         });
     }
+
     private void iniciarComponentes() {
         numeroZero = findViewById(R.id.numero_zero);
         numeroUm = findViewById(R.id.numero_um);
